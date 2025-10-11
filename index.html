@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧜‍♀️ SeahorseLang IDE</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "main": "./main.js",
+        "interpreter": "./seahorse-interpreter.js"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="SeahorseLang Logo" class="logo">
+        <h1>SeahorseLang IDE</h1>
+        <p>The world's premier development environment for the 🧜‍♀️ emoji-based programming language.</p>
+    </header>
+
+    <main>
+        <div class="column editor-column">
+            <h2>Code Editor</h2>
+            <textarea id="code-editor" placeholder="Enter your 🧜‍♀️ code here..."></textarea>
+            <button id="run-button">Run Code</button>
+        </div>
+
+        <div class="column io-column">
+            <h2>Input</h2>
+            <input type="text" id="program-input" placeholder="Program input...">
+            
+            <h2>Output</h2>
+            <pre id="program-output"></pre>
+        </div>
+
+        <div class="column reference-column">
+            <h2>Language Reference</h2>
+            <ul id="command-list">
+                <li><code>🧜‍♀️</code> : Move pointer right</li>
+                <li><code>🧜‍♀️🧜‍♀️</code> : Move pointer left</li>
+                <li><code>🧜‍♀️🧜‍♀️🧜‍♀️</code> : Increment memory cell</li>
+                <li><code>🧜‍♀️🧜‍♀️🧜‍♀️🧜‍♀️</code> : Decrement memory cell</li>
+                <li><code>🧜‍♀️🧜‍♀️🧜‍♀️🧜‍♀️🧜‍♀️</code> : Output character</li>
+                <li><code>🧜‍♀️🧜‍♀️🧜‍♀️🧜‍♀️🧜‍♀️🧜‍♀️</code> : Input character</li>
+                <li><code>🧜‍♀️🧜‍♀️🧜‍♀️🧜‍♀️🧜‍♀️🧜‍♀️🧜‍♀️</code> : Loop start (like `[`)</li>
+                <li><code>🧜‍♀️🧜‍♀️🧜‍♀️🧜‍♀️🧜‍♀️🧜‍♀️🧜‍♀️🧜‍♀️</code> : Loop end (like `]`)</li>
+            </ul>
+        </div>
+    </main>
+    
+    <script type="module" src="main.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
